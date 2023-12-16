@@ -37,6 +37,7 @@ class _NewsPageState extends State<NewsPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('News Page'),
+        backgroundColor: Colors.red,
       ),
       body: isLoading
           ? const Center(
@@ -69,7 +70,7 @@ class _NewsPageState extends State<NewsPage> {
                               ),
                               child: Image.network(
                                 article.urlToImage ??
-                                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTar_ouGael5ODlrC1kbFbKLpEPSJtTQqdaIg&usqp=CAU",
+                                    "https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpgUU",
                                 width: double.infinity,
                                 fit: BoxFit.cover,
                               ),

@@ -10,12 +10,16 @@ class DetailNewsPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Detail News Page'),
+          backgroundColor: Colors.red,
         ),
         body: ListView(
           children: [
             Image.network(article.urlToImage ??
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTar_ouGael5ODlrC1kbFbKLpEPSJtTQqdaIg&usqp=CAU"),
-            Text(article.content ?? "tidak ada content"),
+                "https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpgU"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(article.content ?? "tidak ada content"),
+            ),
           ],
         ));
   }
